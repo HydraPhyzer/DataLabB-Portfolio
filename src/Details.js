@@ -5,7 +5,7 @@ let Details = [
     Description:
       "Introducing CraneGPT, our cutting-edge chatbot designed to revolutionize crane operations. Leveraging the power of Langchain technology and the intelligence of the LAMA-2 language model, CraneGPT becomes your crane expert on demand. It seamlessly interprets crane manuals, providing expert answers to ensure safe and efficient crane operations. Powered by VectorDB for embeddings, CraneGPT offers precision and reliability, enhancing your crane-related queries. Unlock the future of crane management with CraneGPT - your digital partner for superior crane expertise and productivity.",
     Keywords: "Langchain, Large Language Model (LAMA-2), VectorDB",
-    Image: "/Pictures/CraneGPT.png",
+    Image: "/Pictures/CraneGPT.webp",
     Challenges: [
       "Interpreting various crane manuals with different terminologies and structures",
       "Ensuring the accuracy and reliability of the answers provided.",
@@ -43,7 +43,7 @@ let Details = [
     Description:
       "We have used the Deep Convolutional Generative Adversarial Networks (DCGAN) machine learning algorithm to generate the fake samples. In this research-oriented work, we extracted the salient features of DCGAN and practically demonstrated and implemented it to generate the fake scans of the brain tumors and found it to outperform other types of generative adversarial networks (GANs).",
     Keywords: "PyTorch, Deep Learning, Medical Imaging",
-    Image: "/Pictures/NeuroGenis.jpg",
+    Image: "/Pictures/NeuroGenis.webp",
     Challenges: [
       "Extracting salient features of DCGAN effectively for generating realistic fake scans.",
       "Ensuring that the generated scans are indistinguishable from real scans for practical applications.",

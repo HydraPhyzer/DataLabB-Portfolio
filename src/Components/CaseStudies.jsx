@@ -11,7 +11,7 @@ const CaseStudies = () => {
 
   return (
     <div className="min-h-[50rem] md:py-24 w-full dark:bg-dot-black/[0.3] bg-dot-black/[0.3] relative flex gap-y-5 flex-col items-center justify-center">
-    {/* <div className="min-h-[50rem] md:py-24 w-full bg-blue-500 dark:bg-dot-white/[0.6] bg-dot-black/[0.2] relative flex gap-y-5 flex-col items-center justify-center"> */}
+      {/* <div className="min-h-[50rem] md:py-24 w-full bg-blue-500 dark:bg-dot-white/[0.6] bg-dot-black/[0.2] relative flex gap-y-5 flex-col items-center justify-center"> */}
       {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
 
       <div className="bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] -z-10 h-[91.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
@@ -39,8 +39,9 @@ const CaseStudies = () => {
             <div className="md:w-[40%] border-2 border-gray-400 p-1 rounded-md">
               <img
                 src={EachDetail?.Image}
-                className="w-full rounded-md"
-                alt="Crane GPT"
+                className="w-full rounded-md object-cover"
+                alt={EachDetail?.Title}
+                loading="lazy"
                 style={{ height: "100%" }}
               />
             </div>

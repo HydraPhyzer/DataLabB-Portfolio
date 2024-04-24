@@ -28,6 +28,7 @@ const Detail = () => {
               <img
                 src={EachDetail?.Image}
                 className="w-full rounded-md"
+                loading="lazy"
                 alt={EachDetail?.Title}
                 style={{ height: "100%" }}
               />
