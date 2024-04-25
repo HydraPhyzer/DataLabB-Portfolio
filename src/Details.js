@@ -60,7 +60,7 @@ let Details = [
     Description:
       "We utilized the RASA framework, along with GPT3 integration, to design and develop an interactive chatbot. Our chatbot operates on a client-server model, allowing for real-time response through the RASA framework and ChatGPT. The application has the capability to answer close questions as well as open-ended queries, providing users with a natural and engaging conversational experience. We implemented intent classification through the RASA framework, allowing the chatbot to interactively respond to the user with multiple options to sort out the problem at hand.",
     Keywords: "RASA framework, GPT-3, chatbot",
-    Image: "/Pictures/TenantTalker.png",
+    Image: "/Pictures/TenantTalker.webp",
     Challenges: [
       "Ensuring real-time responses in the client-server model.",
       "Implementing effective intent classification for interactive responses.",

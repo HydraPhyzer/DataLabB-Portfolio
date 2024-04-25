@@ -34,7 +34,7 @@ const CaseStudies = () => {
             key={Index}
             className={`flex flex-col ${
               Index % 2 == 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-            } md:justify-evenly  md:space-x-5 space-y-5 text-justify sm:h-[40vh] h-auto relative md:mb-32 p-4`}
+            } md:justify-evenly  md:space-x-5 space-y-5 text-justify sm:h-[45vh] h-auto relative md:mb-32 p-4`}
           >
             <div className="md:w-[40%] border-2 border-gray-400 p-1 rounded-md">
               <img
