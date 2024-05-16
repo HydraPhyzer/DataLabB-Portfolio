@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="flex space-x-5 items-center text-black sticky top-0 z-[999] border-b-[1px] border-gray-400 md:p-1 backdrop-blur-sm">
+    <div className="flex space-x-5 items-center text-black sticky top-0 z-[999] md:border-b-[2px] border-b-[1px] border-black md:p-1 backdrop-blur-sm">
       <img
         src="/Favicon/Favicon.png"
         alt="DataLabB Logo"

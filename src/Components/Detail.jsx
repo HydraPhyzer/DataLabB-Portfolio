@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Header from "./Header";
 import Details from "../Details";
 import { TbTriangleSquareCircleFilled } from "react-icons/tb";
 import { PiCompassToolBold } from "react-icons/pi";
 import { GiPointySword } from "react-icons/gi";
+import { IoHome } from "react-icons/io5";
 
 const Detail = () => {
   const { caseid } = useParams();
   let [EachDetail, setEachDetail] = useState({});
   useEffect(() => {
+    window.scrollTo(0, 0);
     Details.map((item) => {
       if (item.Title === caseid) {
         setEachDetail(item);
@@ -17,14 +19,21 @@ const Detail = () => {
     });
   }, [caseid]);
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen relative">
       <div className="bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
       <div className="bg-[#dbd7fb] absolute top-[-1rem] left-[-35rem] -z-10 h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
       <Header />
-      <div className="h-auto text-black flex flex-col md:py-32 py-12 mx-auto md:space-y-32 space-y-12 w-[90vw] md:w-[70vw]">
+      <div className="h-auto text-black flex flex-col md:py-16 py-12 mx-auto md:space-y-24 space-y-12 w-[90vw] md:w-[70vw]">
+        <Link to={"/"}>
+          <button className="flex justify-between items-center w-max md:gap-x-6 gap-x-4 rounded-full p-2 px-4 bg-blue-500 text-white fixed bottom-2 right-2 text-xs md:text-base">
+            <IoHome className="h-4 w-4 md:h-6 md:w-6" />
+            Home Page
+          </button>
+        </Link>
+
         <div className="flex justify-start">
           <div className="flex items-center justify-between flex-col md:flex-row gap-y-12">
-            <div className="md:w-[50%] rotate-6 hover:rotate-0 transition-all ease-out p-1 rounded-md border-2 border-gray-400">
+            <div className="md:w-[50%] rotate-6 hover:rotate-0 transition-all ease-out p-1 rounded-md box">
               <img
                 src={EachDetail?.Image}
                 className="w-full rounded-md"
@@ -35,7 +44,7 @@ const Detail = () => {
             </div>
 
             <div
-              className="text-black md:w-[40%] w-full flex flex-col justify-between space-y-5 h-full"
+              className="text-black md:w-[40%] w-full flex flex-col justify-evenly space-y-5 h-full"
               style={{ height: "100%" }}
             >
               {" "}
