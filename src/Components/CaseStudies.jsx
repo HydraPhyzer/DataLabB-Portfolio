@@ -29,7 +29,7 @@ const CaseStudies = () => {
         return (
           <div
             key={Index}
-            className={`flex flex-col sm:flex-row md:justify-evenly md:space-x-5 space-y-5 text-justify sm:h-[45vh] h-auto relative md:mb-24 p-4`}
+            className={`flex flex-col md:flex-row md:justify-evenly md:space-x-5 space-y-5 text-justify h-auto relative md:mb-24 p-4`}
           >
             <div className="md:w-[40%] p-2 rounded-md box">
               <img
@@ -37,14 +37,11 @@ const CaseStudies = () => {
                 className="w-full rounded-md object-cover"
                 alt={EachDetail?.Title}
                 loading="lazy"
-                style={{ height: "100%" }}
+                style={{ height: "auto", width:"100%" }}
               />
             </div>
 
-            <div
-              className="text-black md:w-[40%] w-full flex flex-col justify-start space-y-5 h-full"
-              style={{ height: "100%" }}
-            >
+            <div className="text-black md:w-[40%] w-full flex flex-col justify-evenly space-y-5">
               {" "}
               <h1 className="mb-2 text-xl md:text-xl lg:text-2l xl:text-4xl font-bold tracking-tight text-gray-900">
                 {EachDetail?.Title}

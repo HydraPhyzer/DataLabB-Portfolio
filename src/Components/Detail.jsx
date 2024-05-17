@@ -11,13 +11,13 @@ const Detail = () => {
   const { caseid } = useParams();
   let [EachDetail, setEachDetail] = useState({});
   useEffect(() => {
-    window.scrollTo(0, 0);
     Details.map((item) => {
       if (item.Title === caseid) {
         setEachDetail(item);
       }
     });
   }, [caseid]);
+
   return (
     <div className="flex flex-col min-h-screen relative">
       <div className="bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
