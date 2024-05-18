@@ -44,7 +44,7 @@ const CaseStudies = () => {
                       encodeURIComponent(EachDetail.Image) +
                       "?alt=media&token=536a0c9e-8591-43a9-b798-d88a841e6ae6"
                     }
-                    className="w-full rounded-md object-contain max-h-full h-auto bg-black"
+                    className="w-full rounded-md object-contain max-h-[40vh] h-auto bg-black"
                     alt={EachDetail.Title}
                     controls
                     autoPlay

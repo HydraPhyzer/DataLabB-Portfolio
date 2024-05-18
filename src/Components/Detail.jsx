@@ -38,14 +38,14 @@ const Detail = () => {
           <div className="flex items-center justify-between flex-col md:flex-row gap-y-12">
             <div className="md:w-[50%] rotate-6 hover:rotate-0 transition-all ease-out p-2 rounded-md box h-auto relative">
               {EachDetail && EachDetail?.Image?.endsWith(".mp4") ? (
-                <div className="w-full rounded-md h-[40vh] object-contain">
+                <div className="w-full rounded-md object-contain">
                   <video
                     src={
                       "https://firebasestorage.googleapis.com/v0/b/datalabb-db648.appspot.com/o/" +
                       encodeURIComponent(EachDetail.Image) +
                       "?alt=media&token=536a0c9e-8591-43a9-b798-d88a841e6ae6"
                     }
-                    className="w-full rounded-md object-contain max-h-full h-auto bg-black"
+                    className="w-full rounded-md object-contain max-h-[40vh] bg-black"
                     alt={EachDetail.Title}
                     controls
                     autoPlay
