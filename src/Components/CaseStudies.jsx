@@ -37,7 +37,7 @@ const CaseStudies = () => {
               className={`flex flex-col md:flex-row md:justify-evenly md:space-x-5 space-y-5 text-justify h-auto relative p-4`}
             >
               {EachDetail?.Image?.endsWith(".mp4") ? (
-                <div className="md:w-[40%] p-2 rounded-md box h-[40vh] object-contain">
+                <div className="md:w-[40%] p-2 rounded-md box md:h-[40vh] h-auto object-contain">
                   <video
                     src={
                       "https://firebasestorage.googleapis.com/v0/b/datalabb-db648.appspot.com/o/" +
