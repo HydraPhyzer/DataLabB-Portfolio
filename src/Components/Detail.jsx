@@ -4,7 +4,6 @@ import Header from "./Header";
 import Details from "../Details";
 import { TbTriangleSquareCircleFilled } from "react-icons/tb";
 import { PiCompassToolBold } from "react-icons/pi";
-import { GiPointySword } from "react-icons/gi";
 import { IoHome } from "react-icons/io5";
 
 const Detail = () => {
@@ -17,6 +16,10 @@ const Detail = () => {
       }
     });
   }, [caseid]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen relative">
@@ -33,14 +36,32 @@ const Detail = () => {
 
         <div className="flex justify-start">
           <div className="flex items-center justify-between flex-col md:flex-row gap-y-12">
-            <div className="md:w-[50%] rotate-6 hover:rotate-0 transition-all ease-out p-1 rounded-md box">
-              <img
-                src={EachDetail?.Image}
-                className="w-full rounded-md"
-                loading="lazy"
-                alt={EachDetail?.Title}
-                style={{ height: "100%" }}
-              />
+            <div className="md:w-[50%] rotate-6 hover:rotate-0 transition-all ease-out p-2 rounded-md box h-auto relative">
+              {EachDetail && EachDetail?.Image?.endsWith(".mp4") ? (
+                <div className="w-full rounded-md h-[40vh] object-contain">
+                  <video
+                    src={
+                      "https://firebasestorage.googleapis.com/v0/b/datalabb-db648.appspot.com/o/" +
+                      encodeURIComponent(EachDetail.Image) +
+                      "?alt=media&token=536a0c9e-8591-43a9-b798-d88a841e6ae6"
+                    }
+                    className="w-full rounded-md object-contain max-h-full h-auto bg-black"
+                    alt={EachDetail.Title}
+                    controls
+                    autoPlay
+                  />
+                </div>
+              ) : (
+                <div className="w-full rounded-md h-[40vh] object-contain">
+                  <img
+                    src={EachDetail?.Image}
+                    className="w-full rounded-md object-contain max-h-full h-auto bg-black"
+                    loading="lazy"
+                    alt={EachDetail?.Title}
+                    style={{ height: "100%" }}
+                  />
+                </div>
+              )}
             </div>
 
             <div
@@ -71,8 +92,10 @@ const Detail = () => {
               </h1>
             </div>
             <ul className="flex flex-col gap-y-6 md:ml-32 ml-6 self-end sm:text-base text-xs">
-              {EachDetail?.Challenges?.map((item) => (
-                <li className="text-black list-disc">{item}</li>
+              {EachDetail?.Challenges?.map((item, Ind) => (
+                <li className="text-black list-disc" key={Ind}>
+                  {item}
+                </li>
               ))}
             </ul>
           </div>
@@ -84,8 +107,10 @@ const Detail = () => {
               </h1>
             </div>
             <ul className="flex flex-col gap-y-6 md:ml-32 ml-6 self-end sm:text-base text-xs">
-              {EachDetail?.Tools?.map((item) => (
-                <li className="text-black list-disc">{item}</li>
+              {EachDetail?.Tools?.map((item, Ind) => (
+                <li className="text-black list-disc" key={Ind}>
+                  {item}
+                </li>
               ))}
             </ul>
           </div>

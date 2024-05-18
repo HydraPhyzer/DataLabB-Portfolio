@@ -39,7 +39,7 @@ export default function App() {
         onClick={() => {
           ScrollToTop();
         }}
-        className="flex cursor-pointer justify-between items-center w-max md:gap-x-6 gap-x-4 rounded-full p-2 bg-blue-500 text-white fixed bottom-2 right-2 text-xs md:text-base z-[1000]"
+        className="flex cursor-pointer justify-between items-center w-max md:gap-x-6 gap-x-4 rounded-full p-2 bg-black text-green-300 fixed bottom-2 right-2 text-xs md:text-base z-[1000]"
       >
         <FaArrowUpLong className="h-4 w-4 md:h-6 md:w-6" />
       </button>

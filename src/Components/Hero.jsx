@@ -3,7 +3,7 @@ import { TypewriterEffectSmooth } from "../UI/TypeWriter";
 
 const Hero = () => {
   return (
-    <div className="md:h-max h-[60vh] flex flex-col items-center justify-center relative overflow-hidden md:border-b-[2px] border-b-[1px] border-black">
+    <div className="md:h-max h-[60vh] flex flex-col items-center justify-center relative overflow-hidden md:border-b-[2px] border-b-[1px] border-black border-dashed">
       <div className="max-w-4xl pb-2 md:pt-24">
         <p className="text-lg md:text-2xl lg:text-5xl text-gray-700 font-bold inter-var text-center px-2">
           Unveiling the Power of AI, Data Science & Machine Learning

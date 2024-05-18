@@ -107,6 +107,26 @@ let Details = [
       "Seaborn and Matplotlib for data visualization.",
     ],
   },
+  {
+    id: 7,
+    Title: "Clinical Decision Support System",
+    Description:
+      "The Clinical Decision Support System aids young doctors in diagnosing diseases based on symptoms, especially when common symptoms overlap with multiple conditions. Data sourced from 'Habif’s Clinical Dermatology' by James G. Dinulos is annotated, converted into a CSV format, and preprocessed for compatibility with NLP-based Large Language Models like ClinicalBERT, Bio ClinicalBERT, and PubMedBert. The fine-tuned model is integrated into a Flutter mobile app, allowing doctors to input symptoms and receive predictions for the top five possible diseases along with their probabilities.",
+    Keywords: "NLP, ClinicalBERT, PubMedBert, BioClinicalBERT",
+    Image: "Clinical Decision Support System.mp4",
+    Challenges: [
+      "Delicate process due to variations in terminology and context.",
+      "Manual identification of relevant symptoms for each disease.",
+      "Ensuring precision for each specific disease.",
+      "Time-consuming but essential.",
+      "Critical for creating a reliable dataset.",
+    ],
+    Tools: [
+      "Flutter for Developing the mobile application.",
+      "Python for backend development.",
+      "Latex for documentation.",
+    ],
+  },
 ];
 
 export default Details;

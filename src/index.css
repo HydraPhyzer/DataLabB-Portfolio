@@ -56,3 +56,10 @@
     var(--box--border__bottom-right) 100% 100% / .625rem .625rem;
   mask-repeat: no-repeat;
 }
+
+.Border {
+  background-image: url("./assets/Border.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
