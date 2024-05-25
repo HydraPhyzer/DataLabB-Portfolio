@@ -37,14 +37,14 @@ const CaseStudies = () => {
               className={`flex flex-col md:flex-row md:justify-evenly md:space-x-5 space-y-5 text-justify h-auto relative p-4`}
             >
               {EachDetail?.Image?.endsWith(".mp4") ? (
-                <div className="md:w-[40%] p-2 rounded-md box md:h-[40vh] h-auto object-contain">
+                <div className="md:w-[40%] rounded-md md:max-h-[40vh] box">
                   <video
                     src={
                       "https://firebasestorage.googleapis.com/v0/b/datalabb-db648.appspot.com/o/" +
                       encodeURIComponent(EachDetail.Image) +
                       "?alt=media&token=536a0c9e-8591-43a9-b798-d88a841e6ae6"
                     }
-                    className="w-full rounded-md object-contain max-h-[40vh] h-auto bg-black"
+                    className="w-full rounded-md object-contain md:max-h-[40vh] md:h-auto p-2"
                     alt={EachDetail.Title}
                     controls
                     autoPlay
@@ -54,14 +54,14 @@ const CaseStudies = () => {
                 <div className="md:w-[40%] p-2 rounded-md md:max-h-[40vh] box">
                   <img
                     src={EachDetail.Image}
-                    className="w-full rounded-md object-contain md:max-h-full md:h-auto bg-black"
+                    className="w-full rounded-md object-cover md:max-h-full md:h-auto"
                     alt={EachDetail.Title}
                     loading="lazy"
                   />
                 </div>
               )}
 
-              <div className="text-black md:w-[40%] w-full flex flex-col justify-evenly space-y-5">
+              <div className="text-black md:w-[40%] w-full flex flex-col justify-between space-y-5">
                 {" "}
                 <h1 className="mb-2 text-xl md:text-xl lg:text-2l xl:text-4xl font-bold tracking-tight text-gray-900">
                   {EachDetail?.Title}

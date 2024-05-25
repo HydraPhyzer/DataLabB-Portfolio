@@ -55,7 +55,7 @@ const Detail = () => {
                 <div className="w-full rounded-md h-[40vh] object-contain">
                   <img
                     src={EachDetail?.Image}
-                    className="w-full rounded-md object-contain max-h-full h-auto bg-black"
+                    className="w-full rounded-md object-cover max-h-full h-auto bg-black"
                     loading="lazy"
                     alt={EachDetail?.Title}
                     style={{ height: "100%" }}
