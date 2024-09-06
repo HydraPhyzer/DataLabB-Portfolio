@@ -9,7 +9,7 @@ const Hero = () => {
           Unveiling the Power of AI, Data Science & Machine Learning
         </p>
         <p className="text-xs md:text-md lg:text-lg mt-4 text-black font-normal inter-var text-center md:px-24 px-8 lg:py-8">
-          Dive into our case studies and witness the power of technology as it
+          Dive into our Vibrant case studies and witness the power of technology as it
           collaborates with our clients to achieve their wildest digital
           innovation dreams. Explore how our projects have revolutionized
           industries, empowered businesses, and left a lasting impact on the
